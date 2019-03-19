@@ -51,6 +51,8 @@
 		5F412E6C213D7CFC00C5763B /* VPNTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VPNTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F412E70213D7CFC00C5763B /* VPNTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPNTestUITests.m; sourceTree = "<group>"; };
 		5F412E72213D7CFC00C5763B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		772511192240FAA20099155F /* FoundationConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationConst.h; sourceTree = "<group>"; };
+		7725111A2240FAA20099155F /* UIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		5F412E4B213D7CFC00C5763B /* VPNTest */ = {
 			isa = PBXGroup;
 			children = (
+				772511182240FAA20099155F /* Macro */,
 				5F412E4C213D7CFC00C5763B /* AppDelegate.h */,
 				5F412E4D213D7CFC00C5763B /* AppDelegate.m */,
 				5F412E4F213D7CFC00C5763B /* ViewController.h */,
@@ -130,6 +133,16 @@
 				5F412E72213D7CFC00C5763B /* Info.plist */,
 			);
 			path = VPNTestUITests;
+			sourceTree = "<group>";
+		};
+		772511182240FAA20099155F /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				772511192240FAA20099155F /* FoundationConst.h */,
+				7725111A2240FAA20099155F /* UIDefine.h */,
+			);
+			name = Macro;
+			path = "../../../../../Desktop/Demo/nt-folder/Macro";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
