@@ -15,6 +15,11 @@
 		5F412E5C213D7CFC00C5763B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F412E5B213D7CFC00C5763B /* main.m */; };
 		5F412E66213D7CFC00C5763B /* VPNTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F412E65213D7CFC00C5763B /* VPNTestTests.m */; };
 		5F412E71213D7CFC00C5763B /* VPNTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F412E70213D7CFC00C5763B /* VPNTestUITests.m */; };
+		77F3B43D2241D1B0009C9D20 /* NTConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F3B43C2241D1B0009C9D20 /* NTConst.m */; };
+		77F3B4422241D253009C9D20 /* UIScrollView+Adjust.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F3B4412241D253009C9D20 /* UIScrollView+Adjust.m */; };
+		77F3B44C2241D5A1009C9D20 /* NSString+nt_addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F3B44B2241D5A1009C9D20 /* NSString+nt_addition.m */; };
+		77F3B44F2241DCAC009C9D20 /* NSNumber+nt_addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F3B44E2241DCAC009C9D20 /* NSNumber+nt_addition.m */; };
+		77F3B4522241E198009C9D20 /* NSDate+nt_addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F3B4512241E198009C9D20 /* NSDate+nt_addition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,17 @@
 		5F412E72213D7CFC00C5763B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		772511192240FAA20099155F /* FoundationConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationConst.h; sourceTree = "<group>"; };
 		7725111A2240FAA20099155F /* UIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDefine.h; sourceTree = "<group>"; };
+		77F3B43B2241D1B0009C9D20 /* NTConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTConst.h; sourceTree = "<group>"; };
+		77F3B43C2241D1B0009C9D20 /* NTConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTConst.m; sourceTree = "<group>"; };
+		77F3B4402241D253009C9D20 /* UIScrollView+Adjust.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Adjust.h"; sourceTree = "<group>"; };
+		77F3B4412241D253009C9D20 /* UIScrollView+Adjust.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Adjust.m"; sourceTree = "<group>"; };
+		77F3B4432241D298009C9D20 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		77F3B44A2241D5A1009C9D20 /* NSString+nt_addition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+nt_addition.h"; sourceTree = "<group>"; };
+		77F3B44B2241D5A1009C9D20 /* NSString+nt_addition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+nt_addition.m"; sourceTree = "<group>"; };
+		77F3B44D2241DCAC009C9D20 /* NSNumber+nt_addition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+nt_addition.h"; sourceTree = "<group>"; };
+		77F3B44E2241DCAC009C9D20 /* NSNumber+nt_addition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+nt_addition.m"; sourceTree = "<group>"; };
+		77F3B4502241E198009C9D20 /* NSDate+nt_addition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+nt_addition.h"; sourceTree = "<group>"; };
+		77F3B4512241E198009C9D20 /* NSDate+nt_addition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+nt_addition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +119,10 @@
 		5F412E4B213D7CFC00C5763B /* VPNTest */ = {
 			isa = PBXGroup;
 			children = (
+				77F3B43A2241D180009C9D20 /* Consts */,
 				772511182240FAA20099155F /* Macro */,
-				5F412E4C213D7CFC00C5763B /* AppDelegate.h */,
-				5F412E4D213D7CFC00C5763B /* AppDelegate.m */,
+				77F3B4442241D343009C9D20 /* AppDelegate */,
+				77F3B43E2241D227009C9D20 /* Extension */,
 				5F412E4F213D7CFC00C5763B /* ViewController.h */,
 				5F412E50213D7CFC00C5763B /* ViewController.m */,
 				5F412E52213D7CFC00C5763B /* Main.storyboard */,
@@ -113,6 +130,7 @@
 				5F412E57213D7CFC00C5763B /* LaunchScreen.storyboard */,
 				5F412E5A213D7CFC00C5763B /* Info.plist */,
 				5F412E5B213D7CFC00C5763B /* main.m */,
+				77F3B4432241D298009C9D20 /* PrefixHeader.pch */,
 			);
 			path = VPNTest;
 			sourceTree = "<group>";
@@ -143,6 +161,63 @@
 			);
 			name = Macro;
 			path = "../../../../../Desktop/Demo/nt-folder/Macro";
+			sourceTree = "<group>";
+		};
+		77F3B43A2241D180009C9D20 /* Consts */ = {
+			isa = PBXGroup;
+			children = (
+				77F3B43B2241D1B0009C9D20 /* NTConst.h */,
+				77F3B43C2241D1B0009C9D20 /* NTConst.m */,
+			);
+			path = Consts;
+			sourceTree = "<group>";
+		};
+		77F3B43E2241D227009C9D20 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				77F3B43F2241D235009C9D20 /* Category */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		77F3B43F2241D235009C9D20 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				77F3B4462241D560009C9D20 /* UIKit */,
+				77F3B4452241D559009C9D20 /* Foundation */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		77F3B4442241D343009C9D20 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5F412E4C213D7CFC00C5763B /* AppDelegate.h */,
+				5F412E4D213D7CFC00C5763B /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		77F3B4452241D559009C9D20 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				77F3B44A2241D5A1009C9D20 /* NSString+nt_addition.h */,
+				77F3B44B2241D5A1009C9D20 /* NSString+nt_addition.m */,
+				77F3B4502241E198009C9D20 /* NSDate+nt_addition.h */,
+				77F3B4512241E198009C9D20 /* NSDate+nt_addition.m */,
+				77F3B44D2241DCAC009C9D20 /* NSNumber+nt_addition.h */,
+				77F3B44E2241DCAC009C9D20 /* NSNumber+nt_addition.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		77F3B4462241D560009C9D20 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				77F3B4402241D253009C9D20 /* UIScrollView+Adjust.h */,
+				77F3B4412241D253009C9D20 /* UIScrollView+Adjust.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +354,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F412E51213D7CFC00C5763B /* ViewController.m in Sources */,
+				77F3B43D2241D1B0009C9D20 /* NTConst.m in Sources */,
 				5F412E5C213D7CFC00C5763B /* main.m in Sources */,
+				77F3B44C2241D5A1009C9D20 /* NSString+nt_addition.m in Sources */,
+				77F3B4422241D253009C9D20 /* UIScrollView+Adjust.m in Sources */,
+				77F3B44F2241DCAC009C9D20 /* NSNumber+nt_addition.m in Sources */,
+				77F3B4522241E198009C9D20 /* NSDate+nt_addition.m in Sources */,
 				5F412E4E213D7CFC00C5763B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +524,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DDHHKY5ZDU;
+				DEVELOPMENT_TEAM = N6825EKA6L;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VPNTest/PrefixHeader.pch";
 				INFOPLIST_FILE = VPNTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -459,7 +540,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DDHHKY5ZDU;
+				DEVELOPMENT_TEAM = N6825EKA6L;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VPNTest/PrefixHeader.pch";
 				INFOPLIST_FILE = VPNTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
