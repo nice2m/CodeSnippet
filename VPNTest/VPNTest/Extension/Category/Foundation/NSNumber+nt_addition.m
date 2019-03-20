@@ -7,11 +7,12 @@
 //
 
 #import "NSNumber+nt_addition.h"
+#import "NSString+nt_addition.h"
 
 @implementation NSNumber (nt_addition)
 
-+ (NSNumber *)numberWithString:(NSString *)string {
-    NSString *str = [[string stringByTrim] lowercaseString];
++ (NSNumber *)nt_numberWithString:(NSString *)string {
+    NSString *str = [[string nt_stringByTrim] lowercaseString];
     if (!str || !str.length) {
         return nil;
     }

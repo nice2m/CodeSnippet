@@ -5,9 +5,7 @@
 //  Created by Ganjiuhui on 2019/3/20.
 //  Copyright © 2019年 nice2meet. All rights reserved.
 //
-#import <UIKit/UIKit.h>
 #import "NSNumber+nt_addition.h"
-
 #import "NSString+nt_addition.h"
 
 @implementation NSString (nt_addition)
