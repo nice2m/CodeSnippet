@@ -9,25 +9,25 @@
 #ifndef UIDefine_h
 #define UIDefine_h
 
+
 #define nt_is_iPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 #define nt_is_pad (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad)
 
 #define nt_std_screenWidth (nt_is_iPhone ? 320 : 768)
 #define nt_std_screenHeight (nt_is_iPhone ? 568 : 1024)
 
-#define nt_kScreenWidthRatio  (UIScreen.mainScreen.bounds.size.width / nt_std_screenWidth)
-#define nt_kScreenHeightRatio (UIScreen.mainScreen.bounds.size.height / nt_std_screenHeight)
+#define nt_kRatioOfScreenWidth  (UIScreen.mainScreen.bounds.size.width / nt_std_screenWidth)
+#define nt_kRatioOfScreenHeight (UIScreen.mainScreen.bounds.size.height / nt_std_screenHeight)
 
-#define nt_adaptedWidth(x)  ceilf((x) * nt_kScreenWidthRatio)
-#define nt_adaptedHeight(x) ceilf((x) * nt_kScreenHeightRatio)
+#define nt_widthAdapted(x)  ceilf((x) * nt_kRatioOfScreenWidth)
+#define nt_heightAdapted(x) ceilf((x) * nt_kRatioOfScreenHeight)
 
-#define nt_adaptedFontSize(R) [UIFont systemFontOfSize:nt_AdaptedWidth(R)]
-#define nt_adaptedBoldFontSize(R) [UIFont boldSystemFontOfSize:nt_AdaptedWidth(R)]
+#define nt_fontAdaptedSize(R) [UIFont systemFontOfSize:nt_widthAdapted(R)]
+#define nt_boldFontAdaptedSize(R) [UIFont boldSystemFontOfSize:nt_widthAdapted(R)]
 
 #define nt_kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define nt_kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define nt_kScreenBounds [UIScreen mainScreen].bounds
-#define nt_kSizeScale nt_kScreenWidthRatio
 
 #define nt_kStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
 #define nt_kNaviBarHeight 44.f
@@ -45,5 +45,7 @@
 
 #define nt_keyWindow [UIApplication sharedApplication].keyWindow
 #define nt_calculate_size_text(Text,FontSize) [Text sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:FontSize]}]
+
+#define nt_img_named(name) [UIImage imageNamed:name]
 
 #endif /* UIDefine_h */

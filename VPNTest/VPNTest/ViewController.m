@@ -20,6 +20,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.vpnLabel.hidden = FALSE;
+    
+//    UITapGestureRecognizer * tapGS = [N]
+    UITextField * tf = [[UITextField alloc] init];
+//    SEL aSEL =
+    
+    nt_notifCenter_observe_self(@"", @selector(viewDidLoad));
+    
+
+    
 }
 
 

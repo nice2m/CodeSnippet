@@ -6,9 +6,9 @@
 //  Copyright © 2019年 nice2meet. All rights reserved.
 //
 
-#import "UIScrollView+Adjust.h"
+#import "UIScrollView+nt_addition.h"
 
-@implementation UIScrollView (Adjust)
+@implementation UIScrollView (nt_addition)
 - (void)adjustScrollConfig
 {
     
