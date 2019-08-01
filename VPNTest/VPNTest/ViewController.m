@@ -9,6 +9,8 @@
 #include <ifaddrs.h>
 #import "ViewController.h"
 
+
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *vpnLabel;
 
@@ -24,10 +26,18 @@
 //    UITapGestureRecognizer * tapGS = [N]
     UITextField * tf = [[UITextField alloc] init];
 //    SEL aSEL =
+    NTNotificationCenterObserveSelf(@"", @selector(viewDidLoad));
     
-    nt_notifCenter_observe_self(@"", @selector(viewDidLoad));
+    @weakify(self);
+    [@[] enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        @strongify(self);
+    }];
+    //weakify(self);
+    NTDebugLog(@"");
     
-
+    NTDebugAlert(@"");
+    
+    
     
 }
 

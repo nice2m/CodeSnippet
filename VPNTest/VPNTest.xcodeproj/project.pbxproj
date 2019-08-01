@@ -45,9 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5F3E9F1122524FCA00CC5D0C /* NTUIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTUIDefine.h; sourceTree = "<group>"; };
-		5F3E9F1222524FCA00CC5D0C /* NTFoundationConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTFoundationConst.h; sourceTree = "<group>"; };
-		5F3E9F132252588100CC5D0C /* NTDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTDebug.h; sourceTree = "<group>"; };
+		5F3E9F1222524FCA00CC5D0C /* NTMacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTMacroDefine.h; sourceTree = "<group>"; };
+		5F3E9F132252588100CC5D0C /* NTDebugDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTDebugDefine.h; sourceTree = "<group>"; };
 		5F3E9F1422525F3E00CC5D0C /* MacroTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacroTest.m; sourceTree = "<group>"; };
 		5F3E9F1622525F7500CC5D0C /* NTUIDefineTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTUIDefineTest.m; sourceTree = "<group>"; };
 		5F3E9F1822525F8D00CC5D0C /* NTFoundationTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTFoundationTest.m; sourceTree = "<group>"; };
@@ -109,9 +108,8 @@
 		5F3E9F1022524FCA00CC5D0C /* Macro */ = {
 			isa = PBXGroup;
 			children = (
-				5F3E9F1122524FCA00CC5D0C /* NTUIDefine.h */,
-				5F3E9F1222524FCA00CC5D0C /* NTFoundationConst.h */,
-				5F3E9F132252588100CC5D0C /* NTDebug.h */,
+				5F3E9F1222524FCA00CC5D0C /* NTMacroDefine.h */,
+				5F3E9F132252588100CC5D0C /* NTDebugDefine.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -185,6 +183,13 @@
 			path = VPNTestUITests;
 			sourceTree = "<group>";
 		};
+		5FD4F35322F2FD1100C6C189 /* ViewLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewLib;
+			sourceTree = "<group>";
+		};
 		77F3B43A2241D180009C9D20 /* Consts */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +202,7 @@
 		77F3B43E2241D227009C9D20 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5FD4F35322F2FD1100C6C189 /* ViewLib */,
 				77F3B43F2241D235009C9D20 /* Category */,
 			);
 			path = Extension;

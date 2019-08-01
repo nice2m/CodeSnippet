@@ -2,7 +2,7 @@
 //  PrefixHeader.pch
 //  VPNTest
 //
-//  Created by Ganjiuhui on 2019/3/20.
+//  Created by ntm on 2019/3/20.
 //  Copyright © 2019年 nice2meet. All rights reserved.
 //
 
@@ -12,9 +12,8 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
-#import "NTDebug.h"
-#import "NTFoundationConst.h"
-#import "NTUIDefine.h"
+#import "NTDebugDefine.h"
+#import "NTMacroDefine.h"
 
 
 #endif /* PrefixHeader_pch */
